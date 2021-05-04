@@ -1,0 +1,37 @@
+.header,
+.headerHide {
+  padding: 1.4rem 9rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--header-blue);
+  position: fixed;
+  width: -webkit-fill-available;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+  top: 0px;
+
+  img {
+    height: 5rem;
+    margin-right: 6rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .header,
+  .headerHide {
+    padding: 1.4rem 3rem;
+
+    img {
+      height: 3rem;
+    }
+  }
+}
+
+.headerHide {
+  background-color: transparent;
+  img,
+  button {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+}

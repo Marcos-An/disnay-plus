@@ -1,0 +1,380 @@
+@keyframes arrowDown {
+  0% {
+    top: 0px;
+  }
+  30% {
+    top: -10px;
+  }
+  50% {
+    top: -7px;
+  }
+  70% {
+    top: -5px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.container {
+  background-color: var(--dark-blue);
+  p {
+    font-size: 2rem;
+    color: var(--gray-300);
+  }
+
+  .sectionPricesWrapper {
+    min-height: 120vh;
+    position: relative;
+    background-size: cover;
+    background-image: url("/home/Mlp_Hero_Br_&_Rola_Desktop_v2.jpg");
+
+    .sectionPrices {
+      min-height: 100vh;
+      padding: 0rem 9rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: var(--white);
+
+      .logo {
+        height: 10rem;
+        align-self: baseline;
+      }
+
+      .franchiseWrapper {
+        display: flex;
+        position: absolute;
+        bottom: 23vh;
+        justify-content: space-between;
+        align-items: space-between;
+        width: 90%;
+
+        .franchise {
+          max-width: 55rem;
+          max-height: 3rem;
+        }
+        .arrowDown {
+          height: 3rem;
+          color: var(--white);
+          animation: arrowDown 1s infinite;
+          position: relative;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      h1 {
+        margin-bottom: 4rem;
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+        font-weight: 200;
+        margin-top: 2rem;
+        filter: brightness(0.5);
+      }
+    }
+
+    .priceWrapper {
+      display: flex;
+
+      h2 {
+        font-size: 3rem;
+        margin: 0rem;
+        margin-bottom: 2rem;
+        span {
+          font-size: 1.8rem;
+          font-weight: 200;
+          filter: brightness(0.5);
+        }
+      }
+      .mensalPrice {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 3rem;
+      }
+    }
+  }
+
+  .sectionMockup {
+    display: flex;
+    padding: 0rem 9rem 9rem 9rem;
+
+    .muckupImage {
+      margin-top: -10rem;
+    }
+
+    .textMockup {
+      margin-top: 5rem;
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+        color: var(--white);
+      }
+      p {
+        max-width: 85%;
+      }
+    }
+  }
+
+  .sectionOriginals {
+    padding: 9rem;
+
+    .originals {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem;
+      margin: auto;
+      max-width: 1440px;
+    }
+
+    .textOriginals {
+      text-align: center;
+      margin-bottom: 7rem;
+      max-width: 1400px;
+      margin: auto auto 7rem auto;
+
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        color: var(--white);
+      }
+    }
+  }
+
+  .sectionSignUp {
+    display: flex;
+    justify-content: center;
+    padding: 9rem;
+  }
+
+  .sectionDownload {
+    padding: 0rem 9rem 0rem 9rem;
+
+    .backgroundImages {
+      background-image: url("/home/Module_LionKing_PT_2160.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      max-width: 1440px;
+      margin: auto;
+
+      div {
+        left: 56%;
+        position: relative;
+        top: 35%;
+        width: 40%;
+        h1 {
+          font-size: 4rem;
+          margin-bottom: 2rem;
+          color: var(--white);
+        }
+      }
+    }
+  }
+
+  .sectionDevices {
+    h1 {
+      text-align: center;
+      font-size: 4rem;
+      margin-bottom: 3rem;
+      color: var(--white);
+    }
+
+    .devices {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
+      margin: auto;
+      max-width: 1440px;
+    }
+    .device {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: var(--white);
+      }
+      p {
+        margin: 0.3rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    .sectionPricesWrapper {
+      background-image: url("/home/hero-background-small-optimized.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      text-align: center;
+
+      .sectionPrices {
+        padding: 25rem 5rem 5rem 5rem;
+        align-items: center;
+
+        .logo {
+          height: 13rem;
+          align-self: center;
+        }
+        .franchiseWrapper {
+          display: none;
+        }
+
+        .priceWrapper {
+          flex-direction: column;
+          text-align: center;
+          width: 100%;
+          .mensalPrice {
+            margin-right: 0rem;
+            margin-bottom: 5rem;
+          }
+        }
+
+        p {
+          margin-top: 0rem;
+        }
+      }
+    }
+
+    .sectionMockup {
+      flex-direction: column-reverse;
+      padding: 0rem 5rem 5rem 5rem;
+      text-align: center;
+
+      .muckupImage {
+        margin-top: 00rem;
+      }
+
+      .textMockup {
+        margin-top: 5rem;
+        p {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .sectionOriginals {
+      padding: 5rem;
+      .originals:nth-child(9) {
+        img {
+          visibility: hidden;
+        }
+      }
+      .originals {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: row;
+        grid-gap: 2rem;
+        margin: auto;
+        max-width: 1440px;
+      }
+    }
+    .sectionSignUp {
+      padding: 5rem;
+    }
+    .sectionDownload {
+      padding: 0rem 5rem 9rem 5rem;
+
+      .backgroundImages {
+        background-image: url("/home/Module_LionKing_PT_712_V2.png");
+        background-position: bottom;
+        background-size: contain;
+        height: 90vh;
+        margin: auto;
+
+        div {
+          left: 0px;
+          position: relative;
+          text-align: center;
+          top: 10%;
+          width: 100%;
+        }
+      }
+    }
+    .sectionDevices {
+      h1 {
+        font-size: 4rem;
+      }
+
+      .devices {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .footer {
+      padding: 9rem 0rem 2rem 0rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: var(--gray-300);
+
+      .logoFooter {
+        height: 4rem;
+      }
+
+      ul {
+        display: flex;
+        list-style-type: none;
+        margin-top: 2rem;
+        color: var(--gray-300);
+
+        li {
+          margin-right: 2rem;
+        }
+      }
+      span {
+        text-align: center;
+        max-width: 90%;
+      }
+    }
+  }
+}
+
+.headerButtons {
+  margin-left: auto;
+}
+
+.buttonSignUp,
+.buttonSignIn {
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.3rem;
+  border: none;
+
+  &:hover {
+    transition: all 0.7s ease-in-out;
+  }
+}
+
+.buttonSignUp {
+  color: var(--white);
+  background-color: var(--light-blue);
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+}
+
+.buttonSignIn {
+  margin-left: 2rem;
+  color: var(--gray-100);
+  background-color: var(--black-600);
+  opacity: 1 !important;
+
+  &:hover {
+    color: var(--header-blue);
+    background-color: var(--white);
+  }
+}

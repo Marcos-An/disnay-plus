@@ -1,0 +1,126 @@
+{
+  "home": {
+    "originals" : [
+      {
+        "image": "/home/The_Mandalorian_Key_Art_en-US.jpg",
+        "alt": "the-mandalorian"
+      },
+      {
+        "image":  "/home/PT-BR_HSMTM@1.5X.jpg",
+        "alt": "BR_HSMTM"
+      },
+      {
+        "image":  "/home/WandaVision_EN.jpg",
+        "alt": "WandaVision_EN"
+      },
+      {
+        "image":  "/home/PT-BR_ladyTramp@1.5X.jpg",
+        "alt": "BR_ladyTramp"
+      },
+      {
+        "image":  "/home/PT-BR_cloneWars@1.5X.jpg",
+        "alt": "BR_cloneWars"
+      },
+      {
+        "image":    "/home/Soul_EN.jpg",
+        "alt": "Soul_EN"
+      },
+      
+      {
+        "image":   "/home/PT-BR_forkyQuestion@1.5X.jpg",
+        "alt": "BR_forkyQuestion"
+      },
+      {
+        "image":    "/home/RogueTrip_PT.jpg",
+        "alt": "RogueTrip_PT"
+      },
+      {
+        "image":    "/home/PT-BR_phinFerb@1.5X.jpg",
+        "alt": "BR_phinFerb"
+      }
+    ],
+    "noLimites" : [
+      {
+        "image": "/home/AvengersEndGame_pt-BR.jpg",
+        "alt": "AvengersEndGame_pt"
+      },
+      {
+        "image":  "/home/Mulan_EN-US.jpg",
+        "alt": "Mulan_EN"
+      },
+      {
+        "image":  "/home/Violetta_en-US.jpg",
+        "alt": "Violetta_en"
+      },
+      {
+        "image":  "/home/XMenWolverine_PT.jpg",
+        "alt": "XMenWolverine_PT"
+      },
+      {
+        "image":  "/home/Disney_MLP_GridItem_Frozen2_AUNZ.jpg",
+        "alt": "Disney_MLP_GridItem_Frozen2_AUNZ"
+      },
+      {
+        "image":    "/home/Poster_8@2x.png",
+        "alt": "Poster_8"
+      },
+      
+      {
+        "image":   "/home/Star_Wars_TROS_PT.jpg",
+        "alt": "Star_Wars_TROS_PT"
+      },
+      {
+        "image":    "/home/Toy_Story_4_Grid_Item-1.jpg",
+        "alt": "Toy_Story_4_Grid_Item"
+      },
+      {
+        "image":    "/home/Onward_pt-BR.jpg",
+        "alt": "Onward_pt"
+      }
+    ]
+  },
+  "app": {
+    "banners": [
+      {
+        "banner": "/app/banners/ameaca-fantasma-banner.jpg",
+        "imageTitle": "/app/banners/ameaca-fantasma.png"
+      },
+      {
+        "banner": "/app/banners/bad-bath-banner.jpg",
+        "imageTitle": "/app/banners/bad-bath.png"
+      },
+      {
+        "banner": "/app/banners/biomas-banner.jpg",
+        "imageTitle": "/app/banners/bad-bath.png"
+      },
+      {
+        "banner": "/app/banners/clone-wars-banner.jpg",
+        "imageTitle": "/app/banners/clone-wars.png"
+      },
+      {
+        "banner": "/app/banners/force-awaken-banner.jpg",
+        "imageTitle": "/app/banners/force-awaken.png"
+      },
+      {
+        "banner": "/app/banners/force-awaken-sleep-banner.jpg",
+        "imageTitle": "/app/banners/force-awaken-sleep.png"
+      },
+      {
+        "banner": "/app/banners/force-be-with-you-banner.jpg",
+        "imageTitle": "/app/banners/force-be-with-you.png"
+      },
+      {
+        "banner": "/app/banners/new-hope-banner.jpg",
+        "imageTitle": "/app/banners/new-hope.png"
+      },
+      {
+        "banner": "/app/banners/the-mandalorian-banner.jpg",
+        "imageTitle": "/app/banners/the-mandalorian.png"
+      },
+      {
+        "banner": "/app/banners/veiculos-banner.jpg",
+        "imageTitle": "/app/banners/veiculos.png"
+      }
+    ]
+  }
+}

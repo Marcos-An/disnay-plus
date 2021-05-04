@@ -1,0 +1,30 @@
+.container {
+  background-image: url("/app/background.png");
+  background-size: cover;
+  width: 100vw;
+
+  .bannersWrapper {
+    padding-top: 10rem;
+    width: 100vw;
+
+    .banners {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -web-kit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+
+      .banner {
+        flex: none;
+        margin: 0rem 2rem;
+        max-width: 80%;
+        pointer-events: none;
+        scroll-snap-align: center;
+
+        img {
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+}

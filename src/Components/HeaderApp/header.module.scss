@@ -1,0 +1,146 @@
+@keyframes slide {
+  from {
+    height: 100px;
+  }
+  to {
+    height: 400px;
+  }
+}
+
+@keyframes showSlowly {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header,
+.headerHide {
+  padding: 1.4rem 2rem 1.4rem 5rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--header-blue);
+  position: fixed;
+  width: -webkit-fill-available;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+  top: 0px;
+
+  .logo {
+    height: 4rem;
+    margin-right: 6rem;
+  }
+
+  .profileWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+    justify-content: flex-end;
+    cursor: pointer;
+    width: 20rem;
+
+    .optionsWrapper {
+      display: none;
+    }
+
+    &:hover {
+      .divider {
+        margin: auto;
+        background-color: rgba(151, 151, 151, 0.34);
+        width: 100%;
+        height: 1px;
+      }
+
+      .options {
+        animation: showSlowly 0.8s ease-in-out;
+        height: 100%;
+      }
+      .optionsWrapper {
+        padding: 8rem 2rem 2rem 2rem;
+        border-radius: 0rem 0rem 0rem 0.4rem;
+        display: block;
+        position: absolute;
+        top: -2rem;
+        right: -3rem;
+        height: 400px;
+        z-index: -1;
+        width: 23rem;
+        background-color: var(--gray-700);
+        border: 1px solid rgba(151, 151, 151, 0.34);
+        box-shadow: rgb(0 0 0 / 50%) 0px 0px 18px 0px;
+        animation: slide 0.2s ease-in-out;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          list-style-type: none;
+          margin-top: 2rem;
+          color: var(--white);
+          padding: 0px;
+          height: 90%;
+
+          li {
+            margin-right: 2rem;
+            display: flex;
+            align-items: center;
+            color: var(--gray-300);
+
+            span {
+              font-size: 1.5rem;
+            }
+            .moreProfiles {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 4rem;
+              width: 4rem;
+              border-radius: 50%;
+              background-color: var(--gray-transparent);
+              margin-right: 1.5rem;
+              img {
+                height: 2rem;
+              }
+            }
+
+            &:hover {
+              color: var(--white);
+            }
+          }
+        }
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: var(--white);
+    }
+
+    .avatar {
+      height: 4.5rem;
+      width: 4.5rem;
+      background-image: url("/app/avatar.png");
+      background-size: cover;
+      border-radius: 50%;
+      margin-left: 2rem;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .header,
+  .headerHide {
+    padding: 1.4rem 3rem;
+
+    img {
+      height: 3rem;
+    }
+  }
+}
+
+.headerHide {
+  background-color: transparent;
+}
